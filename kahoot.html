@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kahoot</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+    </head>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="styling.html">Styling</a></li>
+            <li><a href="kahoot.html">Kahoot</a></li>
+            <li><a href="pe-game.html">P.E. Game</a></li>
+            <li><a href="50-word-story.html">50 Word Story</a></li>
+        </ul>
+    </nav>
+    <body>
+        <h1>Maths Kahoot</h1>
+        <p>Another task given for homework was to create a maths kahoot. I created a kahoot but my current Kahoot! plan does not allow me to make my kahoots public, so I have gone through the pain of converting the entire quiz into a Excel spreadsheet dowloadable <a href="downloads/sams_maths_kahoot.xlsx">here</a> (learn how to import a spreadsheet into a kahoot <a href="https://kahoot.com/blog/2018/08/23/import-kahoot-from-spreadsheet/">here</a>). I hope you enjoy the kahoot.</p>
+        <br/>
+        <div class="info">
+            <h3>Example question:</h3>
+            <h4>A triangle has 2 acute angles and 1 right angle. What kind of triangle is it?</h4>
+            <p id="ans1">Acute equilateral</p>
+            <p id="ans2">Right scalene</p>
+            <p id="ans3">Obtuse scalene</p>
+            <p id="ans4">Right icocoles</p>
+            <br/>
+            <p><input type="checkbox" id="showCheck" onclick="functionShowAns()"> Show correct answer</p>
+        </div>
+        <script>
+            function functionShowAns() {
+                var checkBox = document.getElementById("showCheck");
+                var text1;
+                var text2;
+                var text3;
+                var text4;
+                if (checkBox.checked == true) {
+                    text1 = "Acute equilateral ❌";
+                    text2 = "Right scalene ❌";
+                    text3 = "Obtuse scalene ❌";
+                    text4 = "Right icocoles ✅";
+                } else {
+                    text1 = "Acute equilateral";
+                    text2 = "Right scalene";
+                    text3 = "Obtuse scalene";
+                    text4 = "Right icocoles";
+                }
+                
+                document.getElementById("ans1").innerHTML = text1;
+                document.getElementById("ans2").innerHTML = text2;
+                document.getElementById("ans3").innerHTML = text3;
+                document.getElementById("ans4").innerHTML = text4;
+            }
+        </script>
+    </body>
+</html>

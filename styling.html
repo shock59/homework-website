@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Styling</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" id="stylesheetLink"/>
+    </head>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="styling.html">Styling</a></li>
+            <li><a href="kahoot.html">Kahoot</a></li>
+            <li><a href="pe-game.html">P.E. Game</a></li>
+            <li><a href="50-word-story.html">50 Word Story</a></li>
+        </ul>
+    </nav>
+    <body>
+        <h1>Custom Styling</h1>
+        <p>Custom styling is choosing the formatting for the page. Unlike creating a website in Google Sites (which only lets you pick from defualt templates), coding a website gives you full control over the styling. For example, the background on this page was created with styling. You would not be able to do this in Google Sites. Styling also allows me to create custom elements such as info boxes</p>
+        <div class="info">
+            <p>Like this</p>
+        </div>
+        <p>and more.</p>
+        <br/>
+        <p><input type="checkbox" id="styleCheck" onclick="functionChangeStyle()"> Remove styling</p>
+        <script>
+            function swapStyleSheet(sheet) {
+                document.getElementById("stylesheetLink").setAttribute("href", sheet);  
+}
+            
+            function functionChangeStyle() {
+                var checkBox = document.getElementById("styleCheck");
+                if (checkBox.checked == true) {
+                    swapStyleSheet("css/no-style.css");
+                } else {
+                    swapStyleSheet("css/style.css");
+                }
+                
+            }
+        </script>
+    </body>
+</html>
