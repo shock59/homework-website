@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interesting Word</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" id="stylesheetLink"/>
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        {% include_relative elements/nav.html %}
+        <h1>Javascript</h1>
+        <p>A great feature of HTML is Javascript. Javascript can change HTML pages in all ways imaginable, such as</p>
+        <ul>
+            <li>changing elements's text or colour</li>
+            <li>showing and hiding elements</li>
+            <li>running external scripts in the web page</li>
+        </ul>
+        <p>An example use of Javascript in this website is the 'Show Answers' checkbox on the <a href="kahoot.html">Maths Kahoot</a> page. The thing on the website that triggers the Javascrpt code is the checkbox being clicked. Here is an example of Javascript (check the box to see the javascript in action!):</p>
+        <p><input type="checkbox" id="styleCheck" onclick="functionChangeStyle()"> Dark theme</p>
+        <script>
+            function swapStyleSheet(sheet) {
+                document.getElementById("stylesheetLink").setAttribute("href", sheet);  
+}
+            
+            function functionChangeStyle() {
+                var checkBox = document.getElementById("styleCheck");
+                if (checkBox.checked == true) {
+                    swapStyleSheet("css/dark.css");
+                } else {
+                    swapStyleSheet("css/style.css");
+                }
+                
+            }
+        </script>
+    </body>
+</html>
