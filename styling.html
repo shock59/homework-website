@@ -6,7 +6,7 @@
         <link rel="icon" href="favicon.ico" />
     </head>
     <body>
-        {% include_relative elements/nav.html %}
+        <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="styling.html">Styling</a></li><li><a href="kahoot.html">Kahoot</a></li><li><a href="pe-game.html">P.E. Game</a></li><li><a href="50-word-story.html">50 Word Story</a></li><li><a href="interesting-word.html">Interesting Word</a></li><li><a href="movie.html">Movie</a></li><li><a href="coding.html">Coding</a></li></ul></nav>
         <h1>Custom Styling</h1>
         <p>Custom styling is choosing the formatting for the page. Unlike creating a website in Google Sites (which only lets you pick from defualt templates), coding a website gives you full control over the styling. For example, the background on this page was created with styling. You would not be able to do this in Google Sites. Styling also allows me to create custom elements such as info boxes</p>
         <div class="info">
@@ -15,6 +15,7 @@
         <p>and more.</p>
         <br/>
         <p><input type="checkbox" id="styleCheck" onclick="functionChangeStyle()"> Remove styling</p>
+        <footer>© Sam Vuckovic, All Rights Reserved. Please do not repurpose any files, sound or videos on this website. This website uses cookies to enchance your experience.</footer>
         <script>
             function swapStyleSheet(sheet) {
                 document.getElementById("stylesheetLink").setAttribute("href", sheet);  
