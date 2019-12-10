@@ -22,8 +22,11 @@ a.bold {
 }
 
 html{
-    background: radial-gradient(circle, skyblue, skyblue 50%, lightcyan 50%, skyblue);
+    background: dodgerblue;
     background-size: 25px 25px;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .info {
